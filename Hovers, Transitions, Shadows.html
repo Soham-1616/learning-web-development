@@ -1,0 +1,250 @@
+<!--Lesson - 3. Hovers, Transistions, Shadows-->
+
+
+<style>
+    .subcribe-button{ /*button is basically css selector = which element we're targeting*/
+        background-color : rgb(198, 0, 0); /*background-color is the css property, and red is css value. rgb means how
+        much amount of red, how much amount of blue and how much amount of green.*/
+        color : white; /*Attribute used to set the font color*/
+        border : none; /*for giving the border*/
+        height: 30px; /*To set the height we have to measure it in px i.e pixel*/
+        width : 105px; 
+        border-radius: 2px; /*Used to curve the button*/
+        cursor: pointer; /*Whenever to tell that it is clickable*/
+        margin-right : 8px; /*Used to make gap between the buttons*/
+        transition: opacity 0.2s /*it basically makes dely in the opacity. Always put the transistion property in the common css style means in the button style.*/
+    }
+
+    .subcribe-button:hover /*. to target the class. The styles whenever we hover over the button
+        Hover is known as pseudo class. It basically add extra style.*/
+    { 
+        /*background-color: green;*/
+
+        opacity: 0.8; /*opacity means the quality of transparcy, as its meaning tells us the lvl of fade to the button which is in between 0 and 1.*/
+        
+    } 
+
+    .subcribe-button:active /*When we hover on button it turns out green 
+    but when we click(activates the button) for that purpose we use active \
+    pseudo class */
+    {
+        /*background-color:blue;*/
+        opacity: 0.5;
+    }
+
+    .join-button{
+        background-color: white;
+        border-color: rgb(0, 132, 255);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(0, 132, 255);
+        height: 30px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s, 
+                    color 0.15s;
+    }
+
+    .join-button:hover{
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+
+    .join-button:active{
+        opacity: 0.8;
+    }
+
+    .tweet-button{
+        background-color: rgb(0, 132, 255);
+        border: none;
+        color: white;
+        height: 30px;
+        width: 74px;
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover/*when we hover on the button only at that time we will see the shadow.*/
+    {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);/*shadow has 4 values, 1. horizontal position of the shadow.
+                                    2. Vertical position of the shadow, 3. blur, 4. Color of the shadow. Here we have used the "rgba" which 
+                                    has 4 values inside it 1st 3 for rgb and last value i.e a is the opacity or the transparency*/
+    }
+
+    .tweet-button:active{
+        opacity: 0.8;
+    }
+
+    
+    .request-button{
+        background-color: black;
+        color: white;
+        height: 30px;
+        width: 100px;
+        border: none;
+        margin-left: 8px;
+        cursor:pointer;
+    }
+
+    .request-button:hover{
+        opacity: 0.8;
+    }
+
+    .request-button:active{
+        opacity: 1;
+    }
+    
+    .add-button{
+        background-color: rgb(255, 229, 61);
+        border: none;
+        border-radius: 60px;
+        height: 30px;
+        width: 150px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+    .add-button:hover{
+        background-color: rgb(215, 194, 0);
+    }
+
+    .add-button:active{
+        opacity: 0.8;
+    }
+
+    .GitHub-button{
+        background-color: rgb(46, 164, 79);
+        border: none;
+        font-weight: bold;
+        height: 30px;
+        width: 70px;
+        border-radius: 5px;
+        color: white;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+    .GitHub-button:hover{
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6)
+    }
+
+    .getStarted-button{
+        background-color: rgb(121, 82, 179);
+        color: white;
+        font-weight: bold;
+        height: 35px;
+        width: 100px;
+        border-radius: 2px;
+        border: none;
+        margin-top: 8px;
+        border-radius: 4px;
+        cursor:pointer;
+        transition: 0.1s;
+    }
+
+    .getStarted-button:hover{
+        opacity: 0.6; 
+    }
+
+    .getStarted-button:active{
+        opacity: 0.8;
+    }
+
+    .download-button{
+        background-color: white;
+        color: rgb(108, 117, 125);
+        height: 35px;
+        width: 100px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor:pointer;
+    }
+
+    .download-button:hover{
+        background-color:  rgb(108, 117, 125);
+        color: white;
+        border: none;
+    }
+
+    .linkedin-button{
+        background-color: rgb(10, 102, 194);
+        color: white;
+        height: 35px;
+        width: 200px;
+        margin-top: 8px;
+        margin-left: 8px;
+        border:none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor:pointer;
+        transition: 0.2s;
+    }
+
+    .linkedin-button:hover{
+        background-color:  rgb(7, 85, 162);
+    }
+
+    .save-button{
+        background-color: white;
+        color:rgb(10, 102, 194);
+        border-radius: 20px;
+        border-style: solid;
+        height: 35px;
+        width: 70px;
+        border-color: rgb(10, 102, 194);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .save-button:hover{
+        background-color: rgb(226, 240, 254);
+        color: rgb(10, 102, 194);
+    }
+
+
+</style>
+
+<button class = "subcribe-button"> <!--Class attributes basically lets us label HTML elements-->
+    SUBSCRIBE
+</button>
+
+<button class = "join-button">
+    JOIN
+</button>
+
+<button class = "tweet-button">
+    Tweet
+</button>
+
+<button class = "request-button">
+    Request now
+</button>
+
+<button class = "add-button">
+    Add to Cart
+</button>
+
+<button class = "GitHub-button">
+    Sign up
+</button>
+
+<button class = "getStarted-button">
+    Get Started
+</button>
+
+<button class = "download-button">
+    Download
+</button>
+
+<button class = "linkedin-button">
+    Apply on company website
+</button>
+
+<button class = "save-button">
+    Save
+</button>
