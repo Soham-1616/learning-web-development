@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-
 <html>
-    <title>
-        Expt 2
-    </title>
+<head>
+    <title>Expt 2</title>
 
     <style>
         .expt{
-            font-family : Arial, Helvetica, sans-serif;
-            font-size : 14px;
-            font-weight : bold;
-            letter-spacing: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
             background-color: rgb(0, 106, 255);
-            color : white;  
-            border : none;
-            height: 30px;
-            width : 90px;
-            border-radius: 5px;
+            color: white;  
+            border: none;
+            height: 35px;
+            width: 100px;
+            border-radius: 6px;
             margin-left: 100px;
             margin-top: 100px;
-            transition: transform 1s;
+            cursor: pointer;
+            transition: 
+                transform 0.8s ease,
+                opacity 0.5s ease,
+                background-color 0.6s ease,
+                box-shadow 0.6s ease;
         }
 
         .expt:hover{
-            opacity : 0.7;
-            transform: rotate(45deg);
-            transform: skewX(5deg);
-            transform: translateX(2);
+            opacity: 0.8;
+            background-color: rgb(0, 80, 200);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transform: rotate(15deg) skewX(5deg) translateX(10px) scale(1.1);
         }
-
     </style>
+</head>
 
-    <body>
-        <button class = "expt">
-            EXPT NO 2
-        </button>
-    </body>
-
+<body>
+    <button class="expt">
+        EXPT NO 2
+    </button>
+</body>
 </html>
