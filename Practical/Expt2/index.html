@@ -9,7 +9,7 @@
             font-size: 14px;
             font-weight: bold;
             background-color: rgb(0, 106, 255);
-            color: white;  
+            color: white;
             border: none;
             height: 35px;
             width: 100px;
@@ -17,18 +17,17 @@
             margin-left: 100px;
             margin-top: 100px;
             cursor: pointer;
-            transition: 
-                transform 0.8s ease,
-                opacity 0.5s ease,
-                background-color 0.6s ease,
-                box-shadow 0.6s ease;
+            transition-property: transform, opacity, background-color, box-shadow;
+            transition-duration: 1s, 0.5s, 0.6s, 0.6s;
+            transition-timing-function: ease, ease-in-out, linear, ease;
+            transition-delay: 0s;
         }
 
         .expt:hover{
             opacity: 0.8;
             background-color: rgb(0, 80, 200);
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            transform: rotate(15deg) skewX(5deg) translateX(10px) scale(1.1);
+            transform: rotate(15deg) skewX(5deg) translateX(10px);
         }
     </style>
 </head>
