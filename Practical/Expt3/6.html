@@ -1,0 +1,58 @@
+<!--5.	Menu-Driven Program Using Functions
+Problem Statement:
+•	Addition
+•	Subtraction
+•	Multiplication
+•	Modulus
+•	Use functions
+-->
+
+<script>
+
+var num1 = parseInt(prompt("Enter first number:"));
+var num2 = parseInt(prompt("Enter second number:"));
+
+var choice = parseInt(prompt("1.Addition  2.Subtraction  3.Multiplication  4.Modulus"));
+
+function add(a, b)
+{
+    return a + b;
+}
+
+function sub(a, b)
+{
+    return a - b;
+}
+
+function mul(a, b)
+{
+    return a * b;
+}
+
+function mod(a, b)
+{
+    return a % b;
+}
+
+if (choice == 1)
+{
+    document.write("Result = " + add(num1, num2));
+}
+else if (choice == 2)
+{
+    document.write("Result = " + sub(num1, num2));
+}
+else if (choice == 3)
+{
+    document.write("Result = " + mul(num1, num2));
+}
+else if (choice == 4)
+{
+    document.write("Result = " + mod(num1, num2));
+}
+else
+{
+    document.write("Invalid Choice");
+}
+
+</script>

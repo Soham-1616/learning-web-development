@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.category-card {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.category-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.category-desc {
+    font-size: 14px;
+}
+
+.category-card:hover {
+    background-color: gray;
+    color: white;
+}

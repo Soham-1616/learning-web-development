@@ -1,0 +1,20 @@
+<!--6.	String Reverse Program
+Problem Statement:
+•	Accept a string
+•	Reverse the string
+•	Display output
+-->
+
+<script>
+
+var str = prompt("Enter a string:");
+var reverse = "";
+
+for (var i = str.length - 1; i >= 0; i--)
+{
+    reverse = reverse + str[i];
+}
+
+document.write("Reversed String: " + reverse);
+
+</script>
