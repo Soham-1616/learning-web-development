@@ -1,0 +1,19 @@
+<!--3.	Write a function using the rest operator to count how many numbers are passed to the function.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Count Numbers</h2>
+
+<script>
+function countNumbers(...numbers) {
+    return numbers.length;
+}
+
+let total = countNumbers(1, 2, 3, 4, 5);
+document.write("Total numbers passed: " + total);
+</script>
+
+</body>
+</html>
